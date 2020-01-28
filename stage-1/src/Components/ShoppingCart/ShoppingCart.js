@@ -11,10 +11,7 @@ class ShoppingCart extends Component {
             <h2>{element.title}</h2>
             <h2>{"$" + element.price + ".00"}</h2>
             <div className="shopping-cart-button-container">
-              <button
-                className="shopping-cart-button"
-                onClick={() => this.props.removeFromCart(element)}
-              >
+              <button className="shopping-cart-button" onClick={() => this.props.removeFromCart(index)}>
                 Remove From Shopping Cart
               </button>
             </div>
